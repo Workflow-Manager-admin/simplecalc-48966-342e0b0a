@@ -1,0 +1,27 @@
+/* SimpleCalc Global Styles and Theme Variables */
+:root {
+  --primary-color: #4CAF50;
+  --secondary-color: #FFC107;
+  --accent-color: #2196F3;
+
+  --background-color: #f5f6fa;
+  --surface-color: #fff;
+  --text-color: #222;
+  --text-secondary: #555a;
+  --button-radius: 10px;
+
+  --font-family: 'Inter', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: var(--font-family);
+  background: var(--background-color);
+  color: var(--text-color);
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}

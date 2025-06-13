@@ -1,0 +1,46 @@
+.calc-keypad {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65em;
+  width: 100%;
+}
+
+.calc-keypad-row {
+  display: flex;
+  width: 100%;
+  gap: 0.65em;
+}
+
+.calc-key-btn {
+  flex: 1 1 0%;
+  font-size: 1.4rem;
+  padding: 0.7em 0;
+  border-radius: var(--button-radius, 10px);
+  background: var(--surface-color, #fff);
+  color: var(--text-color, #222);
+  border: none;
+  transition: background 0.14s, color 0.14s;
+  box-shadow: 0 0.5px 1.2px #0001;
+  cursor: pointer;
+  font-weight: 500;
+  outline: none;
+}
+.calc-key-btn:hover,
+.calc-key-btn:focus {
+  background: #f0f2fa;
+}
+.calc-key-btn.primary {
+  background: var(--primary-color);
+  color: #fff;
+}
+.calc-key-btn.secondary {
+  background: var(--secondary-color);
+  color: #654300;
+}
+.calc-key-btn.accent {
+  background: var(--accent-color);
+  color: #fff;
+}
+.calc-key-btn.wide {
+  flex: 2 1 0%;
+}

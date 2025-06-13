@@ -1,0 +1,19 @@
+<div class="calc-keypad">
+  <div *ngFor="let row of keys" class="calc-keypad-row">
+    <ng-container *ngFor="let key of row">
+      <button
+        class="calc-key-btn"
+        [ngClass]="{
+          'primary': key.style === 'primary',
+          'secondary': key.style === 'secondary',
+          'accent': key.style === 'accent',
+          'wide': key.style === 'wide'
+        }"
+        (click)="onButton(key.value)"
+        type="button"
+      >
+        {{ key.value }}
+      </button>
+    </ng-container>
+  </div>
+</div>
